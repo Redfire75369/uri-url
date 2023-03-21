@@ -47,56 +47,56 @@ macro_rules! test_url_to_uri_fail {
 	);
 }
 
-test_url_to_uri!(test_uri_to_url, "http://127.0.0.1", "127.0.0.1", "/",);
+test_url_to_uri!(test_url_to_uri, "http://127.0.0.1", "127.0.0.1", "/",);
 
-test_url_to_uri!(test_uri_to_url_path, "http://127.0.0.1/chunks", "127.0.0.1", "/chunks",);
+test_url_to_uri!(test_url_to_uri_path, "http://127.0.0.1/chunks", "127.0.0.1", "/chunks",);
 
-test_url_to_uri!(test_uri_to_url_port, "http://127.0.0.1:61761", "127.0.0.1:61761", "/",);
+test_url_to_uri!(test_url_to_uri_port, "http://127.0.0.1:61761", "127.0.0.1:61761", "/",);
 
-test_url_to_uri!(test_uri_to_url_https, "https://127.0.0.1", "127.0.0.1", "/",);
+test_url_to_uri!(test_url_to_uri_https, "https://127.0.0.1", "127.0.0.1", "/",);
 
-test_url_to_uri!(test_uri_to_url_ftp, "ftp://127.0.0.1", "127.0.0.1", "/",);
+test_url_to_uri!(test_url_to_uri_ftp, "ftp://127.0.0.1", "127.0.0.1", "/",);
 
-test_url_to_uri!(test_uri_to_url_username, "http://user@127.0.0.1/", "user@127.0.0.1", "/",);
+test_url_to_uri!(test_url_to_uri_username, "http://user@127.0.0.1/", "user@127.0.0.1", "/",);
 
-test_url_to_uri!(test_uri_to_url_password, "http://:pass@127.0.0.1/", ":pass@127.0.0.1", "/",);
+test_url_to_uri!(test_url_to_uri_password, "http://:pass@127.0.0.1/", ":pass@127.0.0.1", "/",);
 
 test_url_to_uri!(
-	test_uri_to_url_username_password,
+	test_url_to_uri_username_password,
 	"http://user:pass@127.0.0.1/",
 	"user:pass@127.0.0.1",
 	"/",
 );
 
-test_url_to_uri!(test_uri_to_url_username_port, "http://user@127.0.0.1:8080/", "user@127.0.0.1:8080", "/",);
+test_url_to_uri!(test_url_to_uri_username_port, "http://user@127.0.0.1:8080/", "user@127.0.0.1:8080", "/",);
 
-test_url_to_uri!(test_uri_to_url_password_port, "http://:pass@127.0.0.1:8080/", ":pass@127.0.0.1:8080", "/",);
+test_url_to_uri!(test_url_to_uri_password_port, "http://:pass@127.0.0.1:8080/", ":pass@127.0.0.1:8080", "/",);
 
 test_url_to_uri!(
-	test_uri_to_url_username_password_port,
+	test_url_to_uri_username_password_port,
 	"http://user:pass@127.0.0.1:8080/",
 	"user:pass@127.0.0.1:8080",
 	"/",
 );
 
 test_url_to_uri!(
-	test_uri_to_url_query,
+	test_url_to_uri_query,
 	"http://127.0.0.1/chunks?query=path",
 	"127.0.0.1",
 	"/chunks?query=path",
 );
 
-test_url_to_uri!(test_uri_to_url_fragment, "http://127.0.0.1/chunks#fragment", "127.0.0.1", "/chunks",);
+test_url_to_uri!(test_url_to_uri_fragment, "http://127.0.0.1/chunks#fragment", "127.0.0.1", "/chunks",);
 
 test_url_to_uri!(
-	test_uri_to_url_path_query_fragment,
+	test_url_to_uri_path_query_fragment,
 	"http://127.0.0.1/chunks?query=path#fragment",
 	"127.0.0.1",
 	"/chunks?query=path",
 );
 
 test_url_to_uri!(
-	test_uri_to_url_default_http_port,
+	test_url_to_uri_default_http_port,
 	"http://127.0.0.1:80",
 	"127.0.0.1",
 	"/",
@@ -104,7 +104,7 @@ test_url_to_uri!(
 );
 
 test_url_to_uri!(
-	test_uri_to_url_default_https_port,
+	test_url_to_uri_default_https_port,
 	"https://127.0.0.1:443",
 	"127.0.0.1",
 	"/",
