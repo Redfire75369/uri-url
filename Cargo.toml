@@ -1,0 +1,8 @@
+[package]
+name = "uri-url"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+http = "0.2.9"
+url = "2.3.1"
