@@ -3,6 +3,29 @@ name = "uri-url"
 version = "0.1.0"
 edition = "2021"
 
+authors = ["Redfire <redfire75369@hotmail.com>"]
+license = "MPL-2.0"
+description = "Efficient Conversion of URIs and URLs"
+homepage = "https://github.com/Redfire75369/uri-url#readme"
+documentation = "https://docs.rs/uri-url"
+repository = "https://github.com/Redfire75369/uri-url.rs"
+readme = "readme.md"
+
+keywords = [
+	"uri",
+	"url"
+]
+categories = [
+	"encoding",
+	"web-programming"
+]
+
+exclude = [
+	".editorconfig",
+	".gitignore",
+	".run"
+]
+
 [dependencies]
 http = "0.2.9"
 url = "2.3.1"
